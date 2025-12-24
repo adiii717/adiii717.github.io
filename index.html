@@ -659,6 +659,236 @@
             transform: translateY(-5px);
         }
 
+        /* SRE Philosophy Section */
+        .philosophy-quote {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 60px;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-radius: 20px;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            position: relative;
+        }
+
+        .philosophy-quote .quote-icon {
+            font-size: 3rem;
+            color: var(--accent-purple);
+            opacity: 0.5;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+
+        .philosophy-quote blockquote {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .philosophy-quote cite {
+            font-size: 1.1rem;
+            color: var(--accent-blue);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .metrics-card {
+            background: var(--bg-primary);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .metrics-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .metrics-header {
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .golden-signals .metrics-header {
+            background: linear-gradient(135deg, rgba(240, 136, 62, 0.2) 0%, rgba(248, 85, 73, 0.2) 100%);
+        }
+
+        .golden-signals .metrics-header i {
+            color: var(--accent-orange);
+            font-size: 1.5rem;
+        }
+
+        .slo-card .metrics-header {
+            background: linear-gradient(135deg, rgba(88, 166, 255, 0.2) 0%, rgba(57, 197, 207, 0.2) 100%);
+        }
+
+        .slo-card .metrics-header i {
+            color: var(--accent-blue);
+            font-size: 1.5rem;
+        }
+
+        .dora-card .metrics-header {
+            background: linear-gradient(135deg, rgba(163, 113, 247, 0.2) 0%, rgba(240, 147, 251, 0.2) 100%);
+        }
+
+        .dora-card .metrics-header i {
+            color: var(--accent-purple);
+            font-size: 1.5rem;
+        }
+
+        .metrics-header h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .metrics-body {
+            padding: 20px 25px;
+        }
+
+        .metric-item {
+            display: grid;
+            grid-template-columns: 40px 1fr 1fr;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .metric-item:last-child {
+            border-bottom: none;
+        }
+
+        .metric-icon {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .metric-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .metric-desc {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-align: right;
+        }
+
+        /* Three Pillars */
+        .pillars-section {
+            margin-top: 40px;
+        }
+
+        .pillars-title {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            color: var(--text-primary);
+        }
+
+        .pillars-title i {
+            margin-right: 10px;
+            color: var(--accent-cyan);
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .pillar {
+            text-align: center;
+            padding: 30px;
+            background: var(--bg-primary);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .pillar:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+        }
+
+        .pillar-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+        }
+
+        .metrics-pillar {
+            background: linear-gradient(135deg, rgba(230, 82, 44, 0.2) 0%, rgba(240, 104, 0, 0.2) 100%);
+            color: #E6522C;
+        }
+
+        .logs-pillar {
+            background: linear-gradient(135deg, rgba(244, 104, 0, 0.2) 0%, rgba(248, 200, 23, 0.2) 100%);
+            color: #F46800;
+        }
+
+        .traces-pillar {
+            background: linear-gradient(135deg, rgba(102, 207, 227, 0.2) 0%, rgba(57, 197, 207, 0.2) 100%);
+            color: #66CFE3;
+        }
+
+        .pillar h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .pillar-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .pillar-tools span {
+            background: var(--bg-tertiary);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .philosophy-quote blockquote {
+                font-size: 1.1rem;
+            }
+
+            .metric-item {
+                grid-template-columns: 35px 1fr;
+            }
+
+            .metric-desc {
+                display: none;
+            }
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -727,6 +957,7 @@
             <ul class="nav-links">
                 <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
                 <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#philosophy"><i class="fas fa-lightbulb"></i> SRE</a></li>
                 <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
                 <li><a href="#certifications"><i class="fas fa-award"></i> Certs</a></li>
                 <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
@@ -945,8 +1176,160 @@
         </div>
     </section>
 
+    <!-- SRE Philosophy Section -->
+    <section class="section" id="philosophy" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">SRE Philosophy</h2>
+
+            <!-- Signature Quote -->
+            <div class="philosophy-quote">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <blockquote>
+                    Infrastructure without automation is a puzzle with scattered pieces—when it breaks, no one knows how to put it back together. Observability is the 360° camera watching from above, making every dot visible, traceable, and speakable.
+                </blockquote>
+                <cite>— Adil M</cite>
+            </div>
+
+            <!-- Metrics Framework -->
+            <div class="metrics-grid">
+                <!-- Golden Signals -->
+                <div class="metrics-card golden-signals">
+                    <div class="metrics-header">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <h3>Four Golden Signals</h3>
+                    </div>
+                    <div class="metrics-body">
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-tachometer-alt"></i></span>
+                            <span class="metric-name">Latency</span>
+                            <span class="metric-desc">Response time distribution</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-chart-line"></i></span>
+                            <span class="metric-name">Traffic</span>
+                            <span class="metric-desc">Request rate & demand</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-exclamation-triangle"></i></span>
+                            <span class="metric-name">Errors</span>
+                            <span class="metric-desc">Failure rate tracking</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-thermometer-full"></i></span>
+                            <span class="metric-name">Saturation</span>
+                            <span class="metric-desc">Resource utilization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLI/SLO/SLA -->
+                <div class="metrics-card slo-card">
+                    <div class="metrics-header">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>SLI / SLO / SLA</h3>
+                    </div>
+                    <div class="metrics-body">
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-ruler"></i></span>
+                            <span class="metric-name">SLI</span>
+                            <span class="metric-desc">Service Level Indicators</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-crosshairs"></i></span>
+                            <span class="metric-name">SLO</span>
+                            <span class="metric-desc">Target objectives (99.9%+)</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-file-contract"></i></span>
+                            <span class="metric-name">SLA</span>
+                            <span class="metric-desc">Customer agreements</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-piggy-bank"></i></span>
+                            <span class="metric-name">Error Budget</span>
+                            <span class="metric-desc">Reliability vs velocity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DORA Metrics -->
+                <div class="metrics-card dora-card">
+                    <div class="metrics-header">
+                        <i class="fas fa-rocket"></i>
+                        <h3>DORA Metrics</h3>
+                    </div>
+                    <div class="metrics-body">
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-sync"></i></span>
+                            <span class="metric-name">Deploy Frequency</span>
+                            <span class="metric-desc">Multiple per day</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-clock"></i></span>
+                            <span class="metric-name">Lead Time</span>
+                            <span class="metric-desc">Commit to production</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-undo"></i></span>
+                            <span class="metric-name">MTTR</span>
+                            <span class="metric-desc">Mean time to recovery</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-icon"><i class="fas fa-bug"></i></span>
+                            <span class="metric-name">Change Failure</span>
+                            <span class="metric-desc">Deployment success rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Three Pillars of Observability -->
+            <div class="pillars-section">
+                <h3 class="pillars-title"><i class="fas fa-eye"></i> Three Pillars of Observability</h3>
+                <div class="pillars-grid">
+                    <div class="pillar">
+                        <div class="pillar-icon metrics-pillar">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>Metrics</h4>
+                        <div class="pillar-tools">
+                            <span>Prometheus</span>
+                            <span>Datadog</span>
+                            <span>VictoriaMetrics</span>
+                            <span>Thanos</span>
+                        </div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon logs-pillar">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h4>Logs</h4>
+                        <div class="pillar-tools">
+                            <span>Loki</span>
+                            <span>ELK Stack</span>
+                            <span>CloudWatch</span>
+                            <span>Fluentd</span>
+                        </div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon traces-pillar">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4>Traces</h4>
+                        <div class="pillar-tools">
+                            <span>Jaeger</span>
+                            <span>Tempo</span>
+                            <span>OpenTelemetry</span>
+                            <span>Zipkin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
-    <section class="section" id="projects" style="background: var(--bg-secondary);">
+    <section class="section" id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <p class="section-subtitle">Open-source contributions and production-ready solutions</p>
